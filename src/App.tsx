@@ -26,9 +26,6 @@ const App: React.FC = () => {
     <div className="Container">
 
       <h1>TO DO</h1> 
-      <div>
-        {/* <img src={background} alt="background" /> */}
-      </div>
       
       <form className="add" onSubmit={handleSubmit}>
        
