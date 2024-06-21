@@ -1,7 +1,6 @@
 import React, { useReducer, useEffect, useState } from 'react';
 import './App.scss';
-import { todoReducer, Todo, TodoAction } from './Reducer';
-import background from './images/bg-desktop-dark.jpg'
+import { todoReducer,  } from './Reducer';
 
 const App: React.FC = () => {
   const [todos, dispatch] = useReducer(todoReducer, [], () => {
