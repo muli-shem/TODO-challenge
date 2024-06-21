@@ -25,10 +25,9 @@ const App: React.FC = () => {
   return (
     <div className="Container">
 
-      <h1>TO DO</h1> 
-      
+      <h1 className='todo-header'>TODO</h1> 
+      <div className='submit'>
       <form className="add" onSubmit={handleSubmit}>
-       
         <input
           type="text"
           placeholder="Create a new todo..."
@@ -37,21 +36,23 @@ const App: React.FC = () => {
         />
         <input type="submit" value="Submit" />
       </form>
+      </div>
       <div className="Todo">
         {todos.map((todo) => (
-          <div key={todo.id} className="Button">
+          <div key={todo.id} className="todo-item">
             <div className="TodoApp">
-              
+              <div>
               <input
                 type="checkbox"
                 checked={todo.completed}
                 onChange={() => dispatch({ type: 'TOGGLE_TODO', id: todo.id })}
               />
-              
               <span className={todo.completed ? 'completed' : ''}>{todo.text}</span>
-              
+              </div>
+              <div>
               <button className='Does' onClick={() => dispatch({ type: 'DELETE_TODO', id: todo.id })}>X</button>
               {/* <button onClick={() => dispatch({ type: 'EDIT_TODO', id: todo.id, text })}>Edit</button> */}
+            </div>
             </div>
           </div>
         ))}

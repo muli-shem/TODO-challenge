@@ -1,9 +1,15 @@
-body, html {
+  $image-path: '../src\images\bg-desktop-dark.jpg';
+  ody, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #1c1c1c;
+    background-color: rgb(13, 13, 23);
+    background-image: url('../src/images/bg-desktop-dark.jpg');
     color: white;
     font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
   }
+
   
