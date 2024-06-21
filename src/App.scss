@@ -1,0 +1,49 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+
+.Container {
+ 
+  background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  
+  .Todo{
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-right: 6px;
+
+  
+}  
+.TodoApp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-left: 5px;
+  margin-left: 4px;
+}
+  .footer{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 5px;
+    margin-left: 4px;
+  }
+}
+
+}
